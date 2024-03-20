@@ -1,0 +1,81 @@
+﻿TABLE_SCHEMA,TABLE_NAME
+dbo,PRG - Go Live$Acc_ Schedule Line
+dbo,PRG - Go Live$Column Layout
+dbo,PRG - Go Live$Customer
+dbo,PRG - Go Live$Dimension
+dbo,PRG - Go Live$Dimension Value
+dbo,PRG - Go Live$Item
+dbo,PRG - Go Live$Location
+dbo,PRG - Go Live$Logistics Shipment Header
+dbo,PRG - Go Live$Logistics Shipment Line
+dbo,PRG - Go Live$Payment Terms
+dbo,PRG - Go Live$Product Group
+dbo,PRG - Go Live$Sales Cr_Memo Header
+dbo,PRG - Go Live$Sales Cr_Memo Line
+dbo,PRG - Go Live$Sales Invoice Header
+dbo,PRG - Go Live$Sales Invoice Line
+dbo,PRG - Go Live$Value Entry
+dbo,PRG-GB$Acc_ Schedule Line
+dbo,PRG-GB$Column Layout
+dbo,PRG-GB$Customer
+dbo,PRG-GB$Dimension
+dbo,PRG-GB$Dimension Value
+dbo,PRG-GB$Item
+dbo,PRG-GB$Location
+dbo,PRG-GB$Logistics Shipment Header
+dbo,PRG-GB$Logistics Shipment Line
+dbo,PRG-GB$Payment Terms
+dbo,PRG-GB$Product Group
+dbo,PRG-GB$Sales Cr_Memo Header
+dbo,PRG-GB$Sales Cr_Memo Line
+dbo,PRG-GB$Sales Invoice Header
+dbo,PRG-GB$Sales Invoice Line
+dbo,PRG-GB$Value Entry
+dbo,PRG-KM$Acc_ Schedule Line
+dbo,PRG-KM$Column Layout
+dbo,PRG-KM$Customer
+dbo,PRG-KM$Dimension
+dbo,PRG-KM$Dimension Value
+dbo,PRG-KM$Item
+dbo,PRG-KM$Location
+dbo,PRG-KM$Logistics Shipment Header
+dbo,PRG-KM$Logistics Shipment Line
+dbo,PRG-KM$Payment Terms
+dbo,PRG-KM$Product Group
+dbo,PRG-KM$Sales Cr_Memo Header
+dbo,PRG-KM$Sales Cr_Memo Line
+dbo,PRG-KM$Sales Invoice Header
+dbo,PRG-KM$Sales Invoice Line
+dbo,PRG-KM$Value Entry
+dbo,PRG-LG$Acc_ Schedule Line
+dbo,PRG-LG$Column Layout
+dbo,PRG-LG$Customer
+dbo,PRG-LG$Dimension
+dbo,PRG-LG$Dimension Value
+dbo,PRG-LG$Item
+dbo,PRG-LG$Location
+dbo,PRG-LG$Logistics Shipment Header
+dbo,PRG-LG$Logistics Shipment Line
+dbo,PRG-LG$Payment Terms
+dbo,PRG-LG$Product Group
+dbo,PRG-LG$Sales Cr_Memo Header
+dbo,PRG-LG$Sales Cr_Memo Line
+dbo,PRG-LG$Sales Invoice Header
+dbo,PRG-LG$Sales Invoice Line
+dbo,PRG-LG$Value Entry
+dbo,RR-Go Live $Acc_ Schedule Line
+dbo,RR-Go Live $Column Layout
+dbo,RR-Go Live $Customer
+dbo,RR-Go Live $Dimension
+dbo,RR-Go Live $Dimension Value
+dbo,RR-Go Live $Item
+dbo,RR-Go Live $Location
+dbo,RR-Go Live $Logistics Shipment Header
+dbo,RR-Go Live $Logistics Shipment Line
+dbo,RR-Go Live $Payment Terms
+dbo,RR-Go Live $Product Group
+dbo,RR-Go Live $Sales Cr_Memo Header
+dbo,RR-Go Live $Sales Cr_Memo Line
+dbo,RR-Go Live $Sales Invoice Header
+dbo,RR-Go Live $Sales Invoice Line
+dbo,RR-Go Live $Value Entry
