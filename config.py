@@ -18,8 +18,9 @@ SQL_QUERY_All = '''SELECT * FROM {}'''
 SQL_QUERY_YEAR = '''SELECT * FROM {} 
 where  year([Create Date CRM]) >= {}''' 
 SQL_QUERY_FILE = r'D:\Users\anyamanee\Anyamanee_Work\98_Git\C_DockerAirflow\SaleType_convert.sql'
+
 #List
-source_table_prefixes = [
+src_tbl_prefixes = [
     ('PRG', 'PRG - Go Live'),
     ('KM', 'PRG-KM'),
     ('LG', 'PRG-LG'),

@@ -5,7 +5,7 @@ import time
 import os
 from zDBConnection import DatabaseConnector
 from config import (pathPRGList, pathBase, fileType_csv, fileType_paq,
-                     source_db_mapping, SQL_QUERY_FILE, source_table_prefixes)
+                     source_db_mapping, SQL_QUERY_FILE, src_tbl_prefixes)
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -36,11 +36,9 @@ for x_tblfilt in lst_prgtbl:
     id_tbllst+=1
     for x_tbl, x_tblName in zip(df_tblList['FORMATTED_NAME'],df_tblList['TABLE_NAME']):
         print(f"Table >>> {id}/{len(df_tblList)}: {x_tblName}")
-        df_PRGDB_Flie = DBconn.execute_queries_from_template(SQL_QUERY_FILE, source_table_prefixes)
-        print(f"Error executing template query for {x_tblName}: {e}, falling back to direct query.")
-        
-        df_PRGDB = DBconn.get_data_from_db(x_tbl)
 
+        # df_PRGDB_Flie = DBconn.execute_queries_from_template(SQL_QUERY_FILE, src_tbl_prefixes)
+        df_PRGDB = DBconn.get_data_from_db(x_tbl)
         df_PRGDB['Source_DB'] = x_tblName.split('$')[0]
         df_PRGDB['Source_DB'] = df_PRGDB['Source_DB'].map(source_db_mapping)
         df_PRGDB,df_colname = DBconn.format_col_names(df_PRGDB)
