@@ -22,13 +22,13 @@ class DatabaseConnector:
                     query = SQL_QUERY_YEAR.format(tbl_name, '2020')
                     return pd.read_sql(query, conn)
                 except Exception as e:
-                    print("Error executing query with year condition:", e)
+                    print("Error! executing query with year condition \n")
                     # If the first query fails, attempt the second, more general query
                     try:
                         query = SQL_QUERY_All.format(tbl_name)
                         return pd.read_sql(query, conn)
                     except pyodbc.Error as e:
-                        print("Error executing fallback query:", e)
+                        print("Error! executing fallback query")
                         return None
         except pyodbc.Error as e:
             print("Database error:", e)
