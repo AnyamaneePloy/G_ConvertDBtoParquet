@@ -21,11 +21,24 @@ df_tblList_all =DBconn.format_table_names(df_tblList_tmp)
 
 # Base path where the folders are supposed to be
 folder_date = time.strftime("%Y%m%d")
-# Start measuring total runtime
-start_total_time = time.time()
-
+# full_path = os.path.join(pathBase, folder_date, fileType_paq)
+# DBconn.check_path(full_path)
 id_tbllst = 1
+<<<<<<< HEAD
 f_SQLfile = 1 #flag to get data by using .sql file: 1 = Read .sql, Other = Direct to DB
+=======
+df_logs = pd.DataFrame()
+for x_tblfilt in lst_prgtbl:
+    print(f"\nList >>> {id_tbllst}/{len(lst_prgtbl)}: {x_tblfilt}")
+    #init 
+    id = 1
+    folder_name = x_tblfilt.lower()
+    df_logs_tbl = pd.DataFrame()
+    df_tblList = df_tblList_all[df_tblList_all['TABLE_NAME_filt'] == x_tblfilt]
+    id_tbllst+=1
+    for x_tbl, x_tblName in zip(df_tblList['FORMATTED_NAME'],df_tblList['TABLE_NAME']):
+        print(f"Table >>> {id}/{len(df_tblList)}: {x_tblName}")
+>>>>>>> parent of 021505c (Add check time in the code)
 
 df_logs = pd.DataFrame()
 if f_SQLfile ==1:
@@ -88,6 +101,7 @@ else:
             # Save in each table
             #DBconn.save_data(df_PRGDB, full_path, filename, fileType)
         
+<<<<<<< HEAD
             # Append a new log entry
             new_log = pd.DataFrame({
                 'ID':[id],
@@ -110,10 +124,17 @@ else:
         # Calculate and print time taken for each table
         end_table_time = time.time()
         print(f"Time taken for {x_tblfilt}: {end_table_time - start_table_time:.2f} seconds")
+=======
+        df_logs = pd.concat([df_logs, new_log], ignore_index=True)
+        id+=1
+        df_logs_tbl = pd.concat([df_logs_tbl, df_PRGDB], ignore_index=True)
+        
+    # Save merge table
+    full_path_all = os.path.join(pathBase, folder_name, folder_date)
+    DBconn.check_path(full_path_all)
+    DBconn.save_data(df_logs_tbl, full_path_all, x_tblfilt, fileType_paq)
+    DBconn.save_data(df_colname, pathBase, x_tblfilt+'_colName', fileType_csv)
+>>>>>>> parent of 021505c (Add check time in the code)
 
 log_file_path = os.path.join(pathBase,f"{folder_date}_log_file.csv")
 df_logs.to_csv(log_file_path, index=False)
-
-# Calculate total runtime
-end_total_time = time.time()
-print(f"\nTotal Runtime: {end_total_time - start_total_time:.2f} seconds")

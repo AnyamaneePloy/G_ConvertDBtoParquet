@@ -173,3 +173,18 @@ SaleType.sql
 Dockerfile
 main_PRGTableList.csv
 
+Airflow/
+DB_CONNECTION/
+ETL_PRG_PYCode/
+myenv/
+PRGDB20180101/
+SCB_PROD/
+20240410_PRGTest.csv
+AR_AR_PAYMENT_SCHEDULES_ALL.parquet
+column.csv
+main_ORACLE copy.py
+main_ORACLE.py
+SaleInvoiceHeader.sql
+setup_oracle.bat
+test_Oracle.py
+XXCUSTOM_XXETAX_AR_HEADERS_before.csv
